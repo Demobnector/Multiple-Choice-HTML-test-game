@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>level 4</title>
+	<h1 style="font-family:lucida Sans;">4. Who is the maker of ''<u>Minecraft?</u>''</h1>
+	|| a. Mojang || b. Notch || c. Alex || d. Steve ||
+	<hr>
+</head>
+<body>
+	<input id="Input1" type="text">
+
+	<button onclick="Ans()" >Click me</button><br>
+
+	<p id="demo"></p>
+
+	<script>
+function Ans() {
+  var answer = document.getElementById("Input1").value; 
+  var txt;
+    if (answer === "c" || answer === "a" || answer === "d" || answer === "C" || answer === "A" || answer === "D") {
+      alert("Wrong (when you get wrong, back to lvl 1)");
+	  location.href="lvl 1.html";
+
+    } else if (answer === "b" || answer === "B") {
+      alert("Correct");
+	  location.href="lvl 5.html";
+
+    } else if (answer === "") {
+      txt = "Fill in the blank";
+
+    } else {
+      txt = "You didn't choose any of the letters";
+    }
+	document.getElementById("demo").innerHTML = txt;
+  }
+	</script>
+</body>
+</html>

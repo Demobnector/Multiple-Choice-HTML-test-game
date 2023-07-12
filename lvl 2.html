@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>level 2</title>
+	<h1 style="font-family:lucida Sans;">2. In minecraft, what is the item which used to ''<u>Chop Trees?</u>''</h1>
+	|| a. Axe || b. Stick || c. Sword || d. Hoe ||
+	<hr>
+</head>
+<body>
+	<input id="Input1" type="text">
+
+	<button onclick="Ans()" >Click me</button><br>
+
+	<p id="demo"></p>
+
+	<script>
+function Ans() {
+  var answer = document.getElementById("Input1").value; 
+  var txt;
+    if (answer === "c" || answer === "b" || answer === "d" || answer === "C" || answer === "B" || answer === "D") {
+      alert("Wrong (when you get wrong, back to lvl 1)");
+	  location.href="lvl 1.html";
+
+    } else if (answer === "a" || answer === "A") {
+      alert("Correct");
+	  location.href="lvl 3.html";
+
+    } else if (answer === "") {
+      txt = "Fill in the blank";
+
+    } else {
+      txt = "You didn't choose any of the letters";
+    }
+	document.getElementById("demo").innerHTML = txt;
+  }
+	</script>
+</body>
+</html>

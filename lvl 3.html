@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>level 3</title>
+	<h1 style="font-family:lucida Sans;">3. In minecraft, what is a mob that ''<u>Explodes?</u>''</h1>
+	|| a. Enderdragon || b. Skeleton || c. Zombie || d. Creeper ||
+	<hr>
+</head>
+<body>
+	<input id="Input1" type="text">
+
+	<button onclick="Ans()" >Click me</button><br>
+
+	<p id="demo"></p>
+
+	<script>
+function Ans() {
+  var answer = document.getElementById("Input1").value; 
+  var txt;
+    if (answer === "c" || answer === "b" || answer === "a" || answer === "C" || answer === "B" || answer === "A") {
+      alert("Wrong (when you get wrong, back to lvl 1)");
+	  location.href="lvl 1.html";
+
+    } else if (answer === "d" || answer === "D") {
+      alert("Correct");
+	  location.href="lvl 4.html";
+
+    } else if (answer === "") {
+      txt = "Fill in the blank";
+
+    } else {
+      txt = "You didn't choose any of the letters";
+    }
+	document.getElementById("demo").innerHTML = txt;
+  }
+	</script>
+</body>
+</html>

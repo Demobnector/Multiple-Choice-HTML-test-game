@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>level 1</title>
+	<h1 style="font-family:lucida Sans;">1. In minecraft, what is the item which used to ''<u>Teleport?</u>''</h1>
+	|| a. Eggs || b. Snowballs || c. Enderpearls || d. Trident ||
+	<hr>
+</head>
+<body>
+	<input id="Input1" type="text">
+
+	<button onclick="Ans()" >Click me</button><br>
+
+	<p id="demo"></p>
+
+	<script>
+function Ans() {
+  var answer = document.getElementById("Input1").value; 
+  var txt;
+    if (answer === "a" || answer === "b" || answer === "d" || answer === "A" || answer === "B" || answer === "D") {
+      alert("Wrong (when you get wrong, back to lvl 1)");
+	  location.href="lvl 1.html";
+
+    } else if (answer === "c" || answer === "C") {
+      alert("Correct");
+	  location.href="lvl 2.html";
+
+    } else if (answer === "") {
+      txt = "Fill in the blank";
+
+    } else {
+      txt = "You didn't choose any of the letters";
+    }
+	document.getElementById("demo").innerHTML = txt;
+  }
+	</script>
+</body>
+</html>
